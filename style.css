@@ -193,8 +193,8 @@ nav button {
   color: #fa5738; /* Optional: Change the color of the icon */
 }
 .feature3 .icon i {
-  font-size: 7vw; /* Adjust size as needed */
-  color: #fa5738; /* Optional: Change the color of the icon */
+  font-size: 7vw;
+  color: #fa5738;
 }
 .feature-name {
   font-size: 1.2vw;
@@ -234,15 +234,16 @@ nav button {
   position: relative;
 }
 .s3part2 {
-  width: 45%;
+  width: 40%;
   height: 100%;
   display: flex;
   justify-content: center;
   /* align-items: center; */
   flex-direction: column;
-  padding: 10vw 10vw 10vw 0;
+  padding: 10vw 7vw 10vw 0;
 }
 .s3part1 img {
+  width: 40vw;
   position: absolute;
   top: 5%;
   left: 15%;
@@ -250,12 +251,12 @@ nav button {
 }
 .s3part2 h4 {
   color: #fc8974;
-  font-size: 22px;
+  font-size: 26px;
   padding-bottom: 2vh;
 }
 .s3part2 h1 {
   color: #1c1e1d;
-  font-size: 38px;
+  font-size: 44px;
   padding-bottom: 4vh;
 }
 .s3part2 p {
@@ -329,7 +330,7 @@ nav button {
 }
 .s4part1 h1 {
   color: #1c1e1d;
-  font-size: 4vw;
+  font-size: 3.6vw;
   font-weight: 900;
   padding: 0 0 4vw 2.5vw;
   z-index: 9;

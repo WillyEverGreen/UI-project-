@@ -1,0 +1,400 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html,
+body {
+  height: 100%;
+  width: 100%;
+  font-family: Roboto, sans-serif;
+  overflow-x: hidden;
+}
+
+section {
+  width: 100%;
+  height: 100vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  background-color: #ffffff;
+}
+
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures left and right alignment */
+  padding: 2vw 3vw;
+  width: 100vw; /* Ensures nav spans full width */
+}
+
+.part2 {
+  display: flex;
+  align-items: center;
+  gap: 1.5vw; /* Defines consistent spacing between items */
+}
+
+nav h1 {
+  font-size: 26px;
+  color: #fa5738;
+}
+
+nav h4 {
+  font-size: 16px;
+  color: #ccd6f4;
+  font-weight: 600;
+}
+
+nav button {
+  border-radius: 50px;
+  border: 1px solid #fa5738;
+  color: #fc8974;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #fff;
+}
+
+.center {
+  /* background-color: aqua; */
+  width: 100%;
+  height: 100%;
+  display: flex;
+  padding: 40px 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* border-bottom: 1px solid black; */
+  padding-bottom: 2.5vw;
+}
+.center-part1 {
+  /* background-color: yellow; */
+  width: 40%;
+  height: 65vh;
+  padding-left: 4.5vw;
+  padding-top: 3vw;
+}
+.center-part2 {
+  /* background-color: red; */
+  width: 50%;
+  height: 65vh;
+  position: relative;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.center-part1 h1 {
+  width: 35vw;
+  font-size: 3.5vw;
+  color: #1c1e1d;
+  font-weight: 900;
+  padding-bottom: 2.5vw;
+  /* background-color: red; */
+}
+.center-part1 p {
+  color: #b5b4ba;
+  font-weight: 700;
+  padding-bottom: 1.7vw;
+}
+.button-cont {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 1vw;
+}
+.button-cont .button1 {
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #fa5738;
+  font-weight: 500;
+  padding: 12px 22px;
+  font-size: 18px;
+}
+.button-cont .button2 {
+  border-radius: 50px;
+  border: 1px solid #1c1e1d;
+  color: #1c1e1d;
+  background-color: #fff;
+  font-weight: 500;
+  padding: 12px 22px;
+  font-size: 18px;
+}
+.center-part2 img {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: -9vh;
+  scale: 1.1;
+  padding: 2.5vw;
+}
+.circle {
+  width: 65vh;
+  height: 65vh;
+  background-color: #feddd7;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+}
+.section1-bottom {
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  height: 100%;
+  width: 80%;
+  padding: 3vw;
+  gap: 7vh;
+}
+.features {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  gap: 2vw;
+}
+.section1-bottom h1 {
+  position: absolute;
+  top: 0%;
+  font-size: 2vw;
+  font-weight: 700;
+}
+.feature1 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.feature2 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+
+.feature3 {
+  display: flex;
+  justify-content: center;
+  text-align: center;
+  flex-direction: column;
+  align-items: center;
+}
+.feature1 .icon i {
+  font-size: 7vw; /* Adjust size as needed */
+  color: #fa5738; /* Optional: Change the color of the icon */
+}
+.feature2 .icon i {
+  font-size: 7vw; /* Adjust size as needed */
+  color: #fa5738; /* Optional: Change the color of the icon */
+}
+.feature3 .icon i {
+  font-size: 7vw; /* Adjust size as needed */
+  color: #fa5738; /* Optional: Change the color of the icon */
+}
+.feature-name {
+  font-size: 1.2vw;
+  font-weight: 600;
+  color: #3b5192;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.2);
+  padding-bottom: 3vh;
+}
+.feature-text {
+  color: #b5b4ba;
+}
+.section1-bottom button {
+  border-radius: 50px;
+  border: 1px solid #fa5738;
+  color: #fc8974;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 18px;
+  text-transform: capitalize;
+  background-color: #fff;
+}
+.section3 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+  background: linear-gradient(to bottom, #e6ebfa, #fff5f3);
+  clip-path: polygon(0 15%, 100% 0%, 100% 80%, 0 100%);
+}
+
+.s3part1 {
+  width: 55%;
+  height: 100%;
+  /* background-color: red; */
+  position: relative;
+}
+.s3part2 {
+  width: 45%;
+  height: 100%;
+  display: flex;
+  justify-content: center;
+  /* align-items: center; */
+  flex-direction: column;
+  padding: 10vw 10vw 10vw 0;
+}
+.s3part1 img {
+  position: absolute;
+  top: 5%;
+  left: 15%;
+  mix-blend-mode: multiply;
+}
+.s3part2 h4 {
+  color: #fc8974;
+  font-size: 22px;
+  padding-bottom: 2vh;
+}
+.s3part2 h1 {
+  color: #1c1e1d;
+  font-size: 38px;
+  padding-bottom: 4vh;
+}
+.s3part2 p {
+  color: #b5b4ba;
+  padding-bottom: 4vh;
+}
+.s3part2 button {
+  width: 12vw;
+  border-radius: 50px;
+  border: 1px solid #fff;
+  color: #fff;
+  background-color: #fa5738;
+  font-weight: 500;
+  padding: 12px 22px;
+  font-size: 18px;
+}
+.section4 {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+.s4part1 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  padding: 4vw;
+  line-height: 0.9;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+}
+/* .s4part2 {
+  display: flex;
+  flex-wrap: wrap;
+  width: 50%;
+  justify-content: center;
+  align-items: center;
+} */
+.s4part2 {
+  padding-right: 4vw;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center; /* Center the items */
+  width: 50%; /* Keep the same width */
+}
+
+.s4part2 .feature1,
+.s4part2 .feature2 {
+  width: 45%; /* Set width for the first two items to be side by side */
+  margin: 10px; /* Optional: Space between the items */
+}
+
+.s4part2 .feature3,
+.s4part2 .feature4 {
+  /* Add a fourth feature class */
+  width: 45%; /* Set width for the next two items */
+  margin: 10px; /* Optional: Space between the items */
+}
+
+@media screen and (max-width: 768px) {
+  /* For smaller screens, stack the items vertically */
+  .s4part2 .feature1,
+  .s4part2 .feature2,
+  .s4part2 .feature3,
+  .s4part2 .feature4 {
+    width: 100%;
+  }
+}
+.s4part1 h1 {
+  color: #1c1e1d;
+  font-size: 4vw;
+  font-weight: 900;
+  padding: 0 0 4vw 2.5vw;
+  z-index: 9;
+}
+.s4part1 p {
+  color: #b5b4ba;
+  text-align: left;
+  padding-bottom: 2vw;
+  z-index: 9;
+}
+.s4part1 button {
+  width: 12vw;
+  border-radius: 50px;
+  border: 1px solid #ccd6f4;
+  color: #fff;
+  background-color: #fa5738;
+  font-weight: 500;
+  padding: 14px 22px;
+  font-size: 20px;
+  z-index: 9;
+}
+.circle2 {
+  width: 65vh;
+  height: 65vh;
+  background-color: #ccd6f4;
+  border-radius: 50%;
+  position: absolute;
+  top: -10%;
+  z-index: 8;
+  scale: 1.1;
+}
+.section5 {
+  height: 65%;
+  padding: 8vw 15vw 0 15vw;
+  /* background-color: #fa5738; */
+}
+.blocks {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 4.5vw;
+}
+.block {
+  width: 15vw;
+  height: 15vw;
+  background: linear-gradient(to bottom, #e6ebfa, #fff5f3);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+  border-radius: 20%;
+}
+.number {
+  font-size: 26px;
+  font-weight: 600;
+}
+.dash {
+  color: #fc8974;
+}
+.dash i {
+  font-size: 40px;
+}
+.t1 {
+  color: #b5b4ba;
+}
+.t2 {
+  color: #b5b4ba;
+}

@@ -27,14 +27,14 @@ nav {
   display: flex;
   align-items: center;
   justify-content: space-between; /* Ensures left and right alignment */
-  padding: 2vw 3vw;
+  padding: 40px 80px;
   width: 100vw; /* Ensures nav spans full width */
 }
 
 .part2 {
   display: flex;
   align-items: center;
-  gap: 1.5vw; /* Defines consistent spacing between items */
+  gap: 3rem; /* Defines consistent spacing between items */
 }
 
 nav h1 {
@@ -398,4 +398,140 @@ nav button {
 }
 .t2 {
   color: #b5b4ba;
+}
+@media screen and (max-width: 768px) {
+  html,
+  body {
+    overflow-x: hidden;
+  }
+  nav {
+    width: 100vw;
+  }
+  .center {
+    position: relative;
+    width: 100vw;
+    height: 100vh;
+  }
+  .center-part1 {
+    position: absolute;
+    z-index: 9;
+    top: 0%;
+    left: 10%;
+  }
+  .center-part2 {
+    position: absolute;
+    z-index: 8;
+    top: 30%;
+    left: 65;
+  }
+  .circle {
+    width: 300px;
+    height: 300px;
+  }
+  .center-part2 img {
+    width: 200px;
+    height: 200px;
+  }
+  .center-part1 h1 {
+    font-size: 5vw;
+    width: 500px;
+  }
+  .center-part1 .button1 {
+    font-size: 5px;
+    padding: 10px 30px;
+    width: 18vw;
+  }
+  .center-part1 .button2 {
+    font-size: 12px;
+    padding: 10px 30px;
+    width: 18vw;
+  }
+  .section1-bottom h1 {
+    font-size: 4vw;
+  }
+  .section3 {
+    position: relative;
+  }
+  .s3part1 {
+    position: absolute;
+    right: 10%;
+    top: 25%;
+  }
+  .s3part1 img {
+    width: 55vw;
+  }
+  .s3part2 {
+    position: absolute;
+    left: 0%;
+    top: 5%;
+    padding: 5vw;
+  }
+  .s3part2 h4 {
+    font-size: 20px;
+    width: 200px;
+  }
+  .s3part2 h1 {
+    font-size: 28px;
+    width: 300px;
+  }
+
+  .s3part2 button {
+    width: 25vw;
+    font-size: 16px;
+  }
+  /*s4*/
+  .section4 {
+    position: relative;
+    gap: 200px;
+  }
+  .s4part1 {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+  }
+
+  .s4part1 {
+    width: 70vw;
+    height: 70vw;
+    right: 0%;
+    padding: 20vw;
+    top: 45%;
+  }
+  .s4part1 h1 {
+    font-size: 4vw;
+  }
+  .circle2 {
+    width: 70vw;
+    height: 70vw;
+    right: 0%;
+    top: 8%;
+    position: absolute;
+  }
+  .s4part2 {
+    position: absolute;
+    top: 85%;
+    padding: 2vw;
+    gap: 50px;
+    flex-wrap: wrap;
+  }
+  .s4part1 button {
+    width: 25vw;
+    font-size: 16px;
+  }
+  .section5 {
+    position: relative;
+    height: 1500px;
+  }
+  .blocks {
+    position: absolute;
+    top: 80%;
+    left: 15%;
+    transform: translate(-5%, -25%);
+    flex-wrap: wrap;
+  }
+  .block {
+    width: 150px;
+    height: 150px;
+  }
 }

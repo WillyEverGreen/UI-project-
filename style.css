@@ -498,7 +498,7 @@ nav button {
   /*s4*/
   .section4 {
     position: relative;
-    gap: 200px;
+    gap: 20px;
   }
   .s4part1 {
     position: absolute;
@@ -541,18 +541,23 @@ nav button {
   }
   .section5 {
     position: relative;
-    height: 1500px;
+    height: 1100px;
+    padding-bottom: 50px;
   }
   .blocks {
     position: absolute;
-    top: 80%;
+    top: 75%;
     left: 15%;
     transform: translate(-5%, -25%);
     flex-wrap: wrap;
+    padding-bottom: 60px;
   }
   .block {
     width: 150px;
     height: 150px;
+  }
+  .feature-text p {
+    font-size: 500px;
   }
 }
 /* media  */
@@ -561,27 +566,23 @@ nav button {
   body {
     overflow-x: hidden;
   }
-
   nav {
-    padding: 20px 40px; /* Reduce padding for small screens */
+    padding: 20px 40px;
   }
-
   .center {
     width: 100%;
     height: 100vh;
-    padding: 5vw 4vw; /* Reduce padding for small screens */
+    padding: 5vw 4vw;
   }
-
   .center-part1 {
     width: 85%;
     padding-left: 0;
-    padding-top: 4vw; /* Adjust padding for small screens */
+    padding-top: 4vw;
     position: absolute;
     z-index: 9;
     left: 5%;
     top: 0;
   }
-
   .center-part2 {
     width: 80%;
     height: 60vh;
@@ -591,154 +592,146 @@ nav button {
     transform: translateX(-50%);
     z-index: 8;
   }
-
   .circle {
     width: 250px;
     height: 250px;
     top: -5%;
   }
-
   .center-part2 img {
-    width: 150px;
-    height: 150px;
+    max-width: 100%;
+    height: auto;
   }
-
   .center-part1 h1 {
-    font-size: 9vw; /* Increase font size relative to viewport */
+    font-size: 9vw;
     width: 90vw;
     position: absolute;
     left: 5%;
     top: 10%;
   }
-
   .center-part1 p {
-    font-size: 3.5vw; /* Adjust font size for smaller screens */
+    font-size: 3.5vw;
     top: 40%;
     width: 75vw;
     position: absolute;
   }
-
   .center-part1 .button-cont {
     position: absolute;
     top: 80%;
   }
-
   .center-part1 .button1,
   .center-part1 .button2 {
     font-size: 12px;
     padding: 10px 25px;
     width: 120px;
   }
-
   .section1-bottom h1 {
-    font-size: 5vw; /* Adjust the font size */
+    font-size: 5vw;
   }
-
   .section3 {
     position: relative;
   }
-
   .s3part1 {
     position: absolute;
     right: 10%;
     top: 25%;
-    width: 50vw;
+    width: 60vw;
   }
-
+  .s3part1 img {
+    width: 60vw;
+    height: auto;
+  }
   .s3part2 {
     position: absolute;
     left: 0%;
     top: 5%;
     padding: 5vw;
   }
-
   .s3part2 h4 {
-    font-size: 18px;
+    font-size: 2.5vw;
     width: 180px;
   }
-
   .s3part2 h1 {
     font-size: 26px;
     width: 250px;
   }
-
   .s3part2 button {
-    width: 22vw;
-    font-size: 15px;
+    width: 30vw;
+    font-size: 18px;
+    padding: 12px 25px;
   }
-
-  /* Section 4 */
+  .s3part1 .icon i {
+    font-size: 15vw;
+  }
+  .s3part1 h4 {
+    font-size: 2.5vw;
+  }
+  .s3part1 p {
+    font-size: 1.5vw;
+  }
   .section4 {
     position: relative;
-    gap: 100px; /* Reduce gap */
+    gap: 100px;
   }
-
   .s4part1 {
     width: 75vw;
     height: 75vw;
     top: 45%;
     padding: 10vw;
   }
-
   .s4part1 h1 {
     font-size: 7vw;
     width: 100vw;
   }
-
   .s4part1 p {
     font-size: 2.5vw;
   }
-
   .circle2 {
     width: 80vw;
     height: 80vw;
     top: 10%;
     position: absolute;
   }
-
   .s4part2 {
     position: absolute;
     top: 85%;
     padding: 3vw;
     gap: 40px;
   }
-
+  .s4part2 .feature1 .icon i,
+  .s4part2 .feature2 .icon i,
+  .s4part2 .feature3 .icon i,
+  .s4part2 .feature4 .icon i {
+    font-size: 15vw;
+  }
+  .s4part2 .feature1 .feature-name,
+  .s4part2 .feature2 .feature-name,
+  .s4part2 .feature3 .feature-name,
+  .s4part2 .feature4 .feature-name {
+    font-size: 2.5vw;
+  }
+  .s4part2 .feature1 .feature-text,
+  .s4part2 .feature2 .feature-text,
+  .s4part2 .feature3 .feature-text,
+  .s4part2 .feature4 .feature-text {
+    font-size: 1.5vw;
+  }
   .s4part1 button {
-    width: 200vw;
+    width: 250px;
     font-size: 16px;
   }
-
-  /* Section 5 */
-  .section5 {
-    position: relative;
-    height: auto;
-    padding: 8vw 10vw 0 10vw;
+  .features .feature1 .icon i,
+  .features .feature2 .icon i,
+  .features .feature3 .icon i {
+    font-size: 12vw;
   }
-
-  .blocks {
-    position: absolute;
-    top: 75%;
-    left: 10%;
-    transform: translate(-5%, -20%);
-    flex-wrap: wrap;
-    gap: 3vw; /* Adjust gap between blocks */
+  .features .feature1 .feature-name,
+  .features .feature2 .feature-name,
+  .features .feature3 .feature-name {
+    font-size: 2.5vw;
   }
-
-  .block {
-    width: 120px;
-    height: 120px;
-  }
-
-  .number {
-    font-size: 18px;
-  }
-
-  .dash i {
-    font-size: 30px;
-  }
-
-  .t1,
-  .t2 {
-    font-size: 1.4vw; /* Adjust text size for small screens */
+  .features .feature1 .feature-text,
+  .features .feature2 .feature-text,
+  .features .feature3 .feature-text {
+    font-size: 1.5vw;
   }
 }

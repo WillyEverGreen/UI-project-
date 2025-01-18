@@ -855,3 +855,53 @@ nav button {
     display: none;
   }
 }
+/* Ensure elements are visible by default */
+.center h1,
+.center p,
+.center-part1 button,
+.part2 a,
+.part2 button {
+  opacity: 1 !important;
+  transform: none !important;
+}
+
+/* If you need to add an animation fallback for the page content, you can use CSS animations */
+.center h1,
+.center p {
+  animation: fadeIn 1s ease-in-out forwards;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+/* Ensure the image is visible on Page 1 */
+.center-part2 img {
+  opacity: 1 !important; /* Ensure the image is visible */
+  transform: translateX(0) !important; /* Reset any GSAP transformations */
+  transition: all 1s ease; /* Smooth transition if needed */
+}
+
+/* If you want to add a simple CSS animation for the image */
+.center-part2 img {
+  animation: imageAppear 1s ease-out forwards; /* Apply CSS animation */
+}
+
+@keyframes imageAppear {
+  from {
+    opacity: 0;
+    transform: translateX(
+      500px
+    ); /* Starting position, similar to GSAP x: 2000 */
+  }
+  to {
+    opacity: 1;
+    transform: translateX(0); /* Final position */
+  }
+}

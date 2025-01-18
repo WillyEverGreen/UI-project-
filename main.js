@@ -12,53 +12,44 @@ hamburger.addEventListener("click", () => {
 
 // adding gsap
 function page1Animation() {
-  var tl = gsap.timeline();
+  let tl1 = gsap.timeline();
 
-  tl.from(["nav h1", ".part2 a", ".part2 button"], {
+  tl1.from(["nav h1", ".part2 a", ".part2 button"], {
     y: -30,
     opacity: 0,
-    delay: 1,
-    duration: 0.7,
+    delay: 0.2,
+    duration: 0.3,
     stagger: 0.15,
   });
 
-  tl.from(
-    [".center-part1 h1"],
-    {
-      x: -500,
-      opacity: 0,
-      duration: 0.5,
-    },
-    "-=0.3"
-  );
-  tl.from([".center-part1 p"], {
+  tl1.from([".center h1"], {
+    x: -500,
+    opacity: 0,
+    duration: 0.2,
+  });
+  tl1.from(".center p", {
+    x: -100,
+    opacity: 0,
+    duration: 0.2,
+    clearProps: "all",
+  });
+  tl1.from(".center-part1 button", {
     x: -100,
     opacity: 0,
     duration: 0.4,
+    scrub: 1,
   });
-  tl.from([".center-part1 button"], {
-    x: -100,
+  tl1.from([".circle"], {
     opacity: 0,
-    duration: 0.3,
+    duration: 0.2,
   });
-  tl.from(
-    [".circle"],
-    {
-      opacity: 0,
-      duration: 0.5,
-    },
-    "-=0.5"
-  );
-  tl.from(
-    [".center-part2 img"],
-    {
-      x: 2000,
-      opacity: 0,
-      delay: 0.2,
-      duration: 0.7,
-    },
-    "-=0.5"
-  );
+  tl1.from(".center-part2 img", {
+    x: 2000,
+    opacity: 0,
+    delay: 0.2,
+    duration: 0.4,
+    scrub: 1,
+  });
 }
 page1Animation();
 

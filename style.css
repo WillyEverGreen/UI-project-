@@ -155,11 +155,13 @@ nav button {
   justify-content: space-around;
   align-items: center;
   gap: 2vw;
+  width: 70vw;
+  position: relative;
 }
 .section1-bottom h1 {
   position: absolute;
   top: 0%;
-  font-size: 2vw;
+  font-size: 2.7vw;
   font-weight: 700;
 }
 .feature1 {
@@ -175,6 +177,7 @@ nav button {
   text-align: center;
   flex-direction: column;
   align-items: center;
+  padding-top: 40px;
 }
 
 .feature3 {
@@ -770,9 +773,9 @@ nav a {
   transition: background-color 0.3s ease;
 }
 
-nav a:hover {
+/* nav a:hover {
   background-color: #444;
-}
+} */
 
 nav button {
   border-radius: 50px;

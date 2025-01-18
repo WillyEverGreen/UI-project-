@@ -541,7 +541,7 @@ nav button {
   }
   .section5 {
     position: relative;
-    height: 1100px;
+    height: 1800px;
     padding-bottom: 50px;
   }
   .blocks {
@@ -655,8 +655,8 @@ nav button {
     width: 250px;
   }
   .s3part2 button {
-    width: 30vw;
-    font-size: 18px;
+    width: 35vw;
+    font-size: 8px;
     padding: 12px 25px;
   }
   .s3part1 .icon i {
@@ -716,8 +716,9 @@ nav button {
     font-size: 1.5vw;
   }
   .s4part1 button {
-    width: 250px;
-    font-size: 16px;
+    width: 35vw;
+    font-size: 8px;
+    padding: 12px 25px;
   }
   .features .feature1 .icon i,
   .features .feature2 .icon i,
@@ -733,5 +734,121 @@ nav button {
   .features .feature2 .feature-text,
   .features .feature3 .feature-text {
     font-size: 1.5vw;
+  }
+  .section5 {
+    position: relative;
+    height: 1200px;
+    padding-bottom: 50px;
+  }
+}
+/* fixing nav */
+nav {
+  display: flex;
+  align-items: center;
+  justify-content: space-between; /* Ensures left and right alignment */
+  padding: 40px 80px;
+  width: 100vw; /* Ensures nav spans full width */
+}
+
+.part2 {
+  display: flex;
+  align-items: center;
+  gap: 3rem; /* Defines consistent spacing between items */
+}
+
+nav h1 {
+  font-size: 26px;
+  color: #fa5738;
+}
+
+nav a {
+  font-size: 16px;
+  color: #ccd6f4;
+  font-weight: 600;
+  text-decoration: none;
+  padding: 8px 12px;
+  transition: background-color 0.3s ease;
+}
+
+nav a:hover {
+  background-color: #444;
+}
+
+nav button {
+  border-radius: 50px;
+  border: 1px solid #fa5738;
+  color: #fc8974;
+  font-weight: 500;
+  padding: 10px 20px;
+  font-size: 18px;
+  background-color: #fff;
+  cursor: pointer;
+}
+
+/* Hamburger Menu (Hidden by default) */
+.hamburger {
+  display: none; /* Hide the hamburger menu by default */
+  cursor: pointer;
+}
+
+.hamburger i {
+  color: #fa5738;
+  font-size: 30px;
+}
+
+/* Media Queries for Mobile */
+/* Mobile View Styles */
+@media screen and (max-width: 768px) {
+  /* Initially hide the navigation links */
+  .part2 {
+    display: none; /* Hide navigation links */
+    flex-direction: column; /* Stack links vertically */
+    width: 100%;
+    background-color: #333;
+    position: absolute;
+    top: 0;
+    right: -100%; /* Start off the screen */
+    z-index: 10;
+    height: 100vh;
+    padding-top: 60px;
+    transition: right 0.3s ease;
+  }
+
+  /* Show the hamburger menu */
+  .hamburger {
+    display: block; /* Only show on mobile */
+    cursor: pointer;
+    z-index: 15;
+    position: absolute;
+    right: 20px;
+    top: 35px;
+  }
+
+  .hamburger i {
+    font-size: 30px; /* Adjust icon size */
+    color: #fa5738;
+  }
+
+  /* Add transition to make the navigation links slide in */
+  .part2.active {
+    display: flex;
+    right: 0; /* Slide in the links */
+  }
+
+  .part2 a {
+    font-size: 20px;
+    padding: 20px;
+    color: #fff;
+    text-decoration: none;
+    transition: background-color 0.3s ease;
+  }
+
+  .part2 a:hover {
+    background-color: #444;
+  }
+
+  /* Hide the main nav button on mobile */
+  nav button {
+    display: none;
   }
 }
